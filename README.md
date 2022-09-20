@@ -16,3 +16,10 @@ This will be a mongoDB web app concept
 
 ### User 
  - User will be able to create, read, update and delete books from the database
+
+
+# Tasks
+
+ - Peyton => create repo/ create database for books and figure out how to hook it up top the html page 
+ - Gavin => design webpage and create fields for the database entry / heroku deployment 
+ - Collin => work on area where books will be displayed on the page  
