@@ -20,6 +20,6 @@ This will be a mongoDB web app concept
 
 # Tasks
 
- - Peyton => create repo/ create database for books and figure out how to hook it up top the html page 
- - Gavin => design webpage and create fields for the database entry / heroku deployment 
+ - Peyton => create repo/ heroku deployment / create database for books and figure out how to hook it up top the html page 
+ - Gavin => design webpage and create fields for the database entry
  - Collin => work on area where books will be displayed on the page  
