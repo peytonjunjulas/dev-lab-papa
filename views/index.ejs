@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <h1> Your very own Book reading list! </h1>
+  <form action="/books" method="POST">
+    <input type="text" placeholder="Book" name="book">
+    <input type="text" placeholder="Author" name="author">
+    <button type="submit">Submit</button>
+  </form>
+  <h2> Books </h2>
+
+<ul class="books">
+  <!-- Loop through quotes -->
+  <% for(var i = 0; i < books.length; i++) {%>
+    <li class="book">
+      <!-- Output name from the iterated quote object -->
+      <span><%= books[i].book %></span>:
+      <!-- Output quote from the iterated quote object -->
+      <span><%= books[i].author %></span>
+    </li>
+  <% } %>
+</ul>
+
+<div>
+    <h2>The best book!</h2>
+    <p>
+      Replace Percy Jackson with one Book you should actually read
+    </p>
+    <p>
+      Only Deletes the Book: "Percy Jackson" cause no one likes that book
+    </p>
+    <button id="update-button">Replace Book</button>
+</div>
+
+<div>
+    <h2>Remove that book</h2>
+    <p>
+      Delete one of the best books. Does nothing if there are no more books.
+    </p>
+    <button id="delete-button">Delete Best Book</button>
+    <div id="message"></div>
+  </div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="/main.js"></script>
+</body>
+</html>
